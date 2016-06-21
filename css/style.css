@@ -1,7 +1,10 @@
-body{
+/* body{
 	background-image: url('../img/coming-soon.jpg');
-    background-repeat: no-repeat;
     background-size: 100% 100%;
+    display: block;
+    max-width:100%;
+	max-height:100%;
+	margin:auto;
 }
 
 .typed-cursor{
@@ -32,4 +35,307 @@ body{
 	font-style: italic;
 	font-size: 60px;
 	font-family: Monospace;
+} */
+/* The main content */
+
+.main-content {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 600px;
+    padding-top: 40px;
+    margin: 0 0 40px 260px;
+}
+
+
+
+
+/* The left sidebar */
+
+.sidebar {
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #283593;
+    width: 20%;
+    height: 100%;
+    padding: 2% 0;
+    box-shadow: 5px 0 25px #616161;;
+}
+
+.sidebar > a {
+    /* logo container */
+    display: block;
+    text-decoration: none;
+    font-family: Cookie, cursive;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    color:  #ffffff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 7.5;
+    border-radius: 15%;
+    background-color:  #3949ab;
+}
+
+.sidebar .sidebar-links {
+    margin: 30px auto;
+    background-color:  #3949ab;
+}
+
+
+/* Collapsable Link Box wrapper */
+.sidebar-links div > a {
+    display: block;
+    text-decoration: none;
+    margin: 0 auto 5px auto;
+    padding: 10px 0 10px 5px;
+    background-color: #37474f;
+    text-align: left;
+    color:  #b3bcc5;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 2;
+    border-left-width: 25px;
+    border-left-style: solid;
+}
+
+
+.sidebar-links div.selected > a{
+    background-color: #e0e0e0;
+    color: #565d63;
+    line-height: 2.3;
+    margin: 0;
+}
+
+.sidebar-links div > a i.fa {
+    position: relative;
+    font-size: 20px;
+    top: 3px;
+    width: 40px;
+    text-align: center;
+}
+
+
+
+
+/* Sub link styles */
+
+.sidebar-links div ul.sub-links {
+    max-height: 0;
+    overflow: hidden;
+    list-style: none;
+    padding: 0 0 0 30px;
+    color:  #b3bcc5;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 0;
+    margin-left:10%;
+    transition: 0.4s;
+}
+
+.sidebar-links div.selected ul.sub-links {
+    max-height: 150px;
+    padding: 12px 0 12px 30px;
+    background-color: #3f51b5;
+}
+
+.sidebar-links div .sub-links a {
+    text-decoration: none;
+    position: relative;
+    color: #b3bcc5;
+    display: block;
+    text-align: left;
+    padding-left: 10%;
+}
+
+/* Ripple animation fill */
+.ripple-wave{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color:#FFFFFF;
+    top:0;
+    left:0;
+    transform: scale(0);
+    opacity:0.2;
+}
+
+.sidebar-links div .sub-links a:hover > .ripple-wave{
+    animation: ripple-in 1s;
+}
+
+/* Animator */
+@keyframes ripple-in {
+ 0% {transform: scaleX(0);}
+ 20%{transform: scaleX(1);opacity:0.3;}
+ 100%{transform: scaleX(1);opacity:0;}
+}
+
+
+/* Link Colors */
+
+.sidebar-links div.link-blue > a {
+    border-color: #64b5f6;
+}
+
+.sidebar-links div.link-blue > a i.fa {
+    color: #64b5f6;
+}
+
+.sidebar-links div.link-orange > a {
+    border-color: #ffb74d;
+}
+
+.sidebar-links div.link-orange > a i.fa {
+    color: #ffb74d;
+}
+
+.sidebar-links div.link-yellow > a {
+    border-color: #fff176;
+}
+
+.sidebar-links div.link-yellow > a i.fa {
+    color: #fff176;
+}
+
+.sidebar-links div.link-green > a {
+    border-color: #aed581;
+}
+
+.sidebar-links div.link-green > a i.fa {
+    color: #aed581;
+}
+
+
+
+
+/* Making the sidebar responsive */
+
+@media (max-width: 900px) {
+
+    .main-content{
+        max-width: none;
+        padding: 70px 20px;
+        margin: 0 0 40px;
+    }
+
+    .sidebar {
+        width: auto;
+        height: auto;
+        position: static;
+        padding: 20px 0 0;
+    }
+
+    .sidebar .sidebar-links {
+        text-align: center;
+        margin: 20px auto 0;
+    }
+
+    .sidebar-links div {
+        display: inline-block;
+        width: 100px;
+    }
+
+    .sidebar-links div > a {
+        text-align: center;
+        margin: 0;
+        padding: 10px 0;
+        border-left: none;
+        border-top-width: 2px;
+        border-top-style: solid;
+    }
+
+    .sidebar-links div > a i.fa {
+        display: block;
+        margin: 0 auto 5px;
+    }
+
+    .sidebar-links div ul.sub-links {
+        display: none;
+    }
+
+    .sidebar-links div.selected .sub-links {
+        display: block;
+        position: absolute;
+        text-align: center;
+        width: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .sidebar-links div.selected .sub-links li {
+        display: inline-block;
+    }
+
+    .sidebar-links div.selected .sub-links a {
+        display: inline-block;
+        margin-right: 20px;
+        font-size: 13px;
+        color: #748290;
+    }
+
+}
+
+
+
+
+/* Smartphone version */
+
+@media (max-width: 450px) {
+
+    .main-content{
+        padding: 90px 20px;
+    }
+
+    .sidebar {
+        padding: 20px 0;
+    }
+
+    .sidebar .sidebar-links {
+        text-align: center;
+        margin: 20px auto 0;
+        position: relative;
+    }
+
+    .sidebar-links div {
+        display: block;
+        width: 240px;
+        margin: 0 auto 5px;
+    }
+
+    .sidebar-links div > a {
+        text-align: left;
+        padding: 10px 25px;
+        vertical-align: middle;
+        border-top: none;
+        border-left-width: 2px;
+        border-left-style: solid;
+    }
+
+    .sidebar-links div > a i.fa {
+        display: inline-block;
+        font-size: 20px;
+        width: 20px;
+        margin: 0 20px 0 0;
+    }
+
+    .sidebar-links div.selected .sub-links {
+        bottom: -90px;
+    }
+
+}
+
+
+
+
+/*  Removing margins and paddings from the body, so that
+    the sidebar takes the full height of the page */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0
 }

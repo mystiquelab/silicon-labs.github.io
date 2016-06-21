@@ -1,9 +1,10 @@
-<html>
+<!-- <html>
 	<title>
 			Silicon-Labs
 	</title>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script type="text/javascript" src="js/typed-custom.js"></script>
 		<script>
@@ -15,8 +16,10 @@
         		});
     		});
 		</script>
+		
 	</head>
 	<body>
+	
 		<div id="typed-strings">
 			<p>We are Working on This...^1000</p>
     		<p>Please Hold your Asse</p>
@@ -24,6 +27,101 @@
    		</div>
    		<div class="typing-text">
 			<span id="typed"></span>
-		</div>
+		</div> 
+	
+
+	
 	</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Silicon-Labs</title>
+
+	<!-- default styles -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<!-- logo text font -->
+	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<aside class="sidebar">
+		<a href="#" class="company-logo">Silicon-Labs</a>
+		<div class="sidebar-links">
+
+			<!-- TEAM -->
+
+			<div class="link-blue">
+				<a href="#"><i class="fa fa-user"></i>Our Team</a>
+				<ul class="sub-links">
+					<li><a href="#"><div aria-hidden="true" class="ripple-wave"></div>Vineesh NP</a></li>
+					<li><a href="#"><div aria-hidden="true" class="ripple-wave"></div>Aboobacker MK</a></li>
+					<li><a href="#"><div aria-hidden="true" class="ripple-wave"></div>Vivek Lambert</a></li>
+					<li><a href="#"><div aria-hidden="true" class="ripple-wave"></div>Sreenadh T C</a></li>
+					<li><a href="#"><div aria-hidden="true" class="ripple-wave"></div>Sijin T V</a></li>
+					<li><a href="#"><div aria-hidden="true" class="ripple-wave"></div>Akhil</a></li>
+				</ul>
+			</div>
+
+			<!-- BLOGS -->
+
+			<div class="link-orange">
+				<a href="#"><i class="fa fa-paperclip "></i>Blogs</a>
+				<ul class="sub-links">
+					<li><a href="#"><div aria-hidden="true" class="ripple-wave"></div>Link 1 - Blah Blah</a></li>
+					<li><a href="#"><div aria-hidden="true" class="ripple-wave"></div>Link 2 - Blah Blah</a></li>
+					<li><a href="#"><div aria-hidden="true" class="ripple-wave"></div>Link 3 - Blah Blah</a></li>
+					<li><a href="#"><div aria-hidden="true" class="ripple-wave"></div>Link 4 - Blah Blah</a></li>
+				</ul>
+			</div>
+
+			<!-- PROJECTS -->
+
+			<div class="link-yellow">
+				<a href="#"><i class="fa fa-keyboard-o"></i>Projects</a>
+				<ul class="sub-links">
+					<li><a href="#"><div aria-hidden="true" class="ripple-wave"></div>Project 1 - Blah Blah</a></li>
+					<li><a href="#"><div aria-hidden="true" class="ripple-wave"></div>Project 2 - Blah Blah</a></li>
+					<li><a href="#"><div aria-hidden="true" class="ripple-wave"></div>Project 3 - Blah Blah</a></li>
+					<li><a href="#"><div aria-hidden="true" class="ripple-wave"></div>Project 4 - Blah Blah</a></li>
+				</ul>
+			</div>
+
+			<!-- BLAH 
+			<div class="link-green">
+				<a href="#"><i class="fa fa-map-marker"></i>Places</a>
+				<ul class="sub-links">
+					<li><a href="#">Blah 1</a></li>
+					<li><a href="#">Blah 2</a></li>
+					<li><a href="#">Blah 3</a></li>
+					<li><a href="#">Blah 4</a></li>
+				</ul>
+			</div> -->
+		</div>
+	</aside>
+	<div class="main-content">
+
+	<!-- MORE BLAH BLAH BLAH -->
+
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		$(function () {
+			var links = $('.sidebar-links > div');
+			links.on('click', function () {
+
+				links.removeClass('selected');
+				$(this).addClass('selected');
+			});
+		});
+	</script>
+</body>
 </html>
