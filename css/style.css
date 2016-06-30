@@ -1,42 +1,6 @@
-/* body{
-	background-image: url('../img/coming-soon.jpg');
-    background-size: 100% 100%;
-    display: block;
-    max-width:100%;
-	max-height:100%;
-	margin:auto;
+html{
+    height: 100%;
 }
-s
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-
-.typing-text{
-	text-align: center;
-	color: white;
-	font-style: italic;
-	font-size: 60px;
-	font-family: Monospace;
-} */
-/* The main content */
 
 .main-content {
     font-family: Arial, Helvetica, sans-serif;
@@ -45,6 +9,7 @@ s
     background: url('../img/sree_blur.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
 }
 
 
