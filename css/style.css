@@ -6,7 +6,7 @@
 	max-height:100%;
 	margin:auto;
 }
-
+s
 .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
@@ -42,7 +42,7 @@
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 40px;
     margin: 0 0 40px 260px;
-    background: url('../img/sree.jpg');
+    background: url('../img/sree_blur.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
