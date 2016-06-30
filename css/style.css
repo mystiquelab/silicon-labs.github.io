@@ -40,9 +40,11 @@
 
 .main-content {
     font-family: Arial, Helvetica, sans-serif;
-    /*max-width: 600px;*/
     padding-top: 40px;
     margin: 0 0 40px 260px;
+    background: url('../img/sree.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
