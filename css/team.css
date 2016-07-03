@@ -1,0 +1,255 @@
+/*
+
+	Credit:
+	A part of css snippet was downloaded from http://codepen.io/littlesnippets/pen/GpJZzV?editors=1100 
+
+*/
+
+/* container font */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+/* footer font */
+@import url(https://fonts.googleapis.com/css?family=Nova+Mono);
+
+figure.snip0057 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 30%;
+  min-width: 380px;
+  max-width: 480px;
+  width: 100%;
+  background: #ffffff;
+  color: #000000;
+}
+
+figure.snip0057 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+figure.snip0057 .image {
+  width: 50%;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transform: skewX(-15deg);
+  transform: skewX(-15deg);
+}
+
+figure.snip0057 .image img {
+  position: relative;
+  display: block;
+  left: -15%;
+  z-index: 1;
+  -webkit-transform: skew(15deg);
+  transform: skew(15deg);
+}
+
+figure.snip0057:before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 45%;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-transform: skewX(-17deg);
+  transform: skewX(-17deg);
+  -webkit-box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
+  box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
+}
+
+figure.snip0057 figcaption {
+  padding: 20px 30px 20px 20px;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  width: 50%;
+}
+
+figure.snip0057 figcaption h2, figure.snip0057 figcaption p {
+  margin: 0;
+  text-align: right;
+  padding: 10px 0;
+  width: 100%;
+}
+
+figure.snip0057 figcaption p.member-bio {
+  margin: 0;
+  text-align: right;
+  padding: 10px 0;
+  width: 100%;
+  font-size: 0.85em;
+  opacity: 0.8;
+}
+
+figure.snip0057 figcaption h2 {
+  font-size: 1.3em;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+figure.snip0057 figcaption h2 span {
+  font-weight: 800;
+}
+
+figure.snip0057 figcaption p {
+  font-size: 2.0em;
+  opacity: 0.7;
+}
+
+figure.snip0057 figcaption .icons {
+  width: 100%;
+  text-align: right;
+}
+
+figure.snip0057 figcaption .icons i {
+  font-size: 2.0em;
+  padding: 5px;
+  top: 50%;
+  color: #000000;
+  opacity: 0;
+}
+
+figure.snip0057 figcaption a {
+  opacity: 0.3;
+}
+
+figure.snip0057 figcaption a:hover {
+  opacity: 0.8;
+}
+
+figure.snip0057 .position {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  opacity: 1;
+  font-style: italic;
+  color: #ffffff;
+  background: #000000;
+}
+
+figure.snip0057.orange .position {
+  background: #ef6c00;
+}
+
+figure.snip0057.orange .position {
+  background: #ef6c00;
+}
+
+figure.snip0057.teal .position {
+  background: #009688;
+}
+
+figure.snip0057.blue .position {
+  background: #039be5;
+}
+
+figure.snip0057:hover figcaption, figure.snip0057.hover figcaption {
+  bottom: 40px;
+}
+
+figure.snip0057:hover .icons i, figure.snip0057.hover .icons i {
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+figure.snip0057:hover:before,
+figure.snip0057.hover:before {
+  -webkit-animation: shadow 0.6s ease-in-out;
+  animation: shadow 0.6s ease-in-out;
+}
+
+@-webkit-keyframes shadow {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: -10px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes shadow {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: -5px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em;
+}
+
+
+
+/*
+   --------------------------
+          FOOTER
+   -------------------------- 
+*/
+
+.footer, .push {
+  height: 5em;
+}
+
+.footer p{
+  font-family: 'Nova Mono', monospace, Arial;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px #546e7a;
+}
+
+.nav-links-container{
+  padding: 25px 10px;
+}
+
+.nav-links-container ul{
+  list-style-type: none;
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.nav-links-container a{
+  color: white;
+}
+
+.nav-links-container ul li{
+  display: inline-block;
+}
+
+.footer > .footer-content.teal{
+  height: 7.5em;
+  background-color: #009688;
+  box-shadow: 2px 0 20px #546e7a;
+}
+
+.footer > .footer-content.orange{
+  height: 7.5em;
+  background-color: #ef6c00;
+  box-shadow: 2px 0 20px #546e7a;
+}
