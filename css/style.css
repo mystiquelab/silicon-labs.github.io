@@ -29,18 +29,12 @@ html{
     box-shadow: 5px 0 25px #616161;;
 }
 
-.sidebar > a {
+.company-logo {
     /* logo container */
     display: block;
-    text-decoration: none;
-    font-family: Cookie, cursive;
     width: 200px;
     height: 200px;
     margin: 0 auto;
-    text-align: center;
-    color:  #ffffff;
-    font-size: 25px;
-    font-weight: normal;
     line-height: 7.5;
     border-radius: 15%;
     background-color:  #3949ab;
