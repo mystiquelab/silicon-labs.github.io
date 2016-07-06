@@ -1,0 +1,134 @@
+---
+layout: default
+---
+	<!-- CSS exclusive to profile - team.css -->
+	<link rel="stylesheet" href="{{site.baseurl}}/css/team.css">
+</head>
+<body>
+
+<!-- 
+
+	Credit:
+	The portion below was used as a template from http://codepen.io/littlesnippets/pen/GpJZzV?editors=1100 
+	
+-->
+<div class="wrapper">
+	{% if page.url contains "sreenadh" %}
+		{% assign name = site.data.team.sree['name'] %}
+		{% assign span = site.data.team.sree['span'] %}
+		{% assign bio = site.data.team.sree['bio'] %}
+		{% assign github = site.data.team.sree['github'] %}
+		{% assign fb = site.data.team.sree['fb'] %}
+		{% assign twitter = site.data.team.sree['twitter'] %}
+		{% assign email = site.data.team.sree['email'] %}
+		{% assign tel = site.data.team.sree['tel'] %}
+		{% assign imgname = site.data.team.sree['imgname'] %}
+		{% assign post = site.data.team.sree['post'] %}
+		{% assign color_class = site.data.team.sree['color_class'] %}
+
+		{% elsif page.url contains "sijin" %}
+			{% assign name = site.data.team.sijin['name'] %}
+			{% assign span = site.data.team.sijin['span'] %}
+			{% assign bio = site.data.team.sijin['bio'] %}
+			{% assign github = site.data.team.sijin['github'] %}
+			{% assign fb = site.data.team.sijin['fb'] %}
+			{% assign twitter = site.data.team.sijin['twitter'] %}
+			{% assign email = site.data.team.sijin['email'] %}
+			{% assign tel = site.data.team.sijin['tel'] %}
+			{% assign imgname = site.data.team.sijin['imgname'] %}
+			{% assign post = site.data.team.sijin['post'] %}
+			{% assign color_class = site.data.team.sijin['color_class'] %}
+
+		{% elsif page.url contains "akhil" %}
+			{% assign name = site.data.team.akhil['name'] %}
+			{% assign span = site.data.team.akhil['span'] %}
+			{% assign bio = site.data.team.akhil['bio'] %}
+			{% assign github = site.data.team.akhil['github'] %}
+			{% assign fb = site.data.team.akhil['fb'] %}
+			{% assign twitter = site.data.team.akhil['twitter'] %}
+			{% assign email = site.data.team.akhil['email'] %}
+			{% assign tel = site.data.team.akhil['tel'] %}
+			{% assign imgname = site.data.team.akhil['imgname'] %}
+			{% assign post = site.data.team.akhil['post'] %}
+			{% assign color_class = site.data.team.akhil['color_class'] %}
+
+		{% elsif page.url contains "vineesh" %}
+			{% assign name = site.data.team.vineesh['name'] %}
+			{% assign span = site.data.team.vineesh['span'] %}
+			{% assign bio = site.data.team.vineesh['bio'] %}
+			{% assign github = site.data.team.vineesh['github'] %}
+			{% assign fb = site.data.team.vineesh['fb'] %}
+			{% assign twitter = site.data.team.vineesh['twitter'] %}
+			{% assign email = site.data.team.vineesh['email'] %}
+			{% assign tel = site.data.team.vineesh['tel'] %}
+			{% assign imgname = site.data.team.vineesh['imgname'] %}
+			{% assign post = site.data.team.vineesh['post'] %}
+			{% assign color_class = site.data.team.vineesh['color_class'] %}
+	
+		{% elsif page.url contains "aboobacker" %}
+			{% assign name = site.data.team.aboobacker['name'] %}
+			{% assign span = site.data.team.aboobacker['span'] %}
+			{% assign bio = site.data.team.aboobacker['bio'] %}
+			{% assign github = site.data.team.aboobacker['github'] %}
+			{% assign fb = site.data.team.aboobacker['fb'] %}
+			{% assign twitter = site.data.team.aboobacker['twitter'] %}
+			{% assign email = site.data.team.aboobacker['email'] %}
+			{% assign tel = site.data.team.aboobacker['tel'] %}
+			{% assign imgname = site.data.team.aboobacker['imgname'] %}
+			{% assign post = site.data.team.aboobacker['post'] %}
+			{% assign color_class = site.data.team.aboobacker['color_class'] %}
+
+		{% elsif page.url contains "vivek" %}
+			{% assign name = site.data.team.vivek['name'] %}
+			{% assign span = site.data.team.vivek['span'] %}
+			{% assign bio = site.data.team.vivek['bio'] %}
+			{% assign github = site.data.team.vivek['github'] %}
+			{% assign fb = site.data.team.vivek['fb'] %}
+			{% assign twitter = site.data.team.vivek['twitter'] %}
+			{% assign email = site.data.team.vivek['email'] %}
+			{% assign tel = site.data.team.vivek['tel'] %}
+			{% assign imgname = site.data.team.vivek['imgname'] %}
+			{% assign post = site.data.team.vivek['post'] %}
+			{% assign color_class = site.data.team.vivek['color_class'] %}
+	
+	{% endif %}
+
+	<figure class="snip0057 {{ color_class }}">
+	<figcaption>
+		<h2>{{ name }} <span>{{ span }}</span></h2>
+		<p class = "member-bio">{{ bio }}</p>
+		<p>
+			<a href="https://github.com/{{ github }}">
+				<i class="fa fa-github" aria-hidden="true"></i>
+			</a>
+			<a href="https://facebook.com/{{ fb }}">
+				<i class="fa fa-facebook-square" aria-hidden="true"></i>
+			</a>
+			<a href="https://twitter.com/{{ twitter }}">
+				<i class="fa fa-twitter-square" aria-hidden="true"></i>
+			</a> 
+		</p>
+		<div class="icons">
+			<a href="mailto:{{ email }}"><i class="fa fa-envelope-o" aria-hidden="true"></i></i></a>
+			<a href="tel:{{ tel }}"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
+		</div>
+	</figcaption>
+	<div class="image">
+		<img src="{{ site.baseurl }}/img/{{ imgname }}.jpg" alt="sample4" />
+	</div>
+	<div class="position">{{ post }}</div>
+</figure>
+<div class="push"></div>
+</div>
+<div class="footer">
+	<div class="footer-content {{ color_class }}">
+		<div class="nav-links-container">
+			<ul>
+				<li><a href="{{ site.baseurl }}/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+				<li></li>
+			</ul>
+		</div>
+		<p>Copyright 2016 - Silicon-Labs</p>
+	</div>	
+</div>
+</body>

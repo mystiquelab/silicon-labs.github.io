@@ -1,0 +1,5 @@
+# Specify the base url here. Take care if its a project page.
+baseurl: ''
+
+# Permalinks
+permalink: pretty

@@ -134,11 +134,11 @@ figure.snip0057 .position {
 }
 
 figure.snip0057.orange .position {
-  background: #ef6c00;
+  background: #f57c00;
 }
 
-figure.snip0057.orange .position {
-  background: #ef6c00;
+figure.snip0057.indigo .position {
+  background: #303f9f;
 }
 
 figure.snip0057.teal .position {
@@ -146,7 +146,15 @@ figure.snip0057.teal .position {
 }
 
 figure.snip0057.blue .position {
-  background: #039be5;
+  background: #0288d1;
+}
+
+figure.snip0057.brown .position {
+  background: #5d4037;
+}
+
+figure.snip0057.purple .position {
+  background: #7b1fa2;
 }
 
 figure.snip0057:hover figcaption, figure.snip0057.hover figcaption {
@@ -196,7 +204,9 @@ figure.snip0057.hover:before {
 html, body {
   height: 100%;
 }
-
+body{
+  background: white;
+}
 .wrapper {
   min-height: 100%;
   height: auto !important;
@@ -242,14 +252,38 @@ html, body {
   display: inline-block;
 }
 
-.footer > .footer-content.teal{
+.footer > .footer-content.purple{ /* google material purple 700 */
   height: 7.5em;
-  background-color: #009688;
+  background-color: #7b1fa2;
   box-shadow: 2px 0 20px #546e7a;
 }
 
-.footer > .footer-content.orange{
+.footer > .footer-content.blue{ /* google material blue 700 */
   height: 7.5em;
-  background-color: #ef6c00;
+  background-color: #0288d1;
+  box-shadow: 2px 0 20px #546e7a;
+}
+
+.footer > .footer-content.teal{ /* google material teal 700 */
+  height: 7.5em;
+  background-color: #00796b;
+  box-shadow: 2px 0 20px #546e7a;
+}
+
+.footer > .footer-content.brown{ /* google material brown 700 */
+  height: 7.5em;
+  background-color: #5d4037;
+  box-shadow: 2px 0 20px #546e7a;
+}
+
+.footer > .footer-content.indigo{ /* google material indigo 700 */
+  height: 7.5em;
+  background-color: #303f9f;
+  box-shadow: 2px 0 20px #546e7a;
+}
+
+.footer > .footer-content.orange{ /* google material orange 700 */
+  height: 7.5em;
+  background-color: #f57c00;
   box-shadow: 2px 0 20px #546e7a;
 }
