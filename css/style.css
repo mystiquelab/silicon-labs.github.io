@@ -6,13 +6,9 @@ html{
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 40px;
     margin: 0 0 40px 260px;
-    background: url('../img/sree_blur.jpg');
-    background-repeat: no-repeat;
+    background: url('../img/sree_blur.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 100%;
 }
-
-
 
 
 /* The left sidebar */
@@ -77,8 +73,6 @@ html{
     width: 40px;
     text-align: center;
 }
-
-
 
 
 /* Sub link styles */
@@ -172,7 +166,6 @@ html{
 
 
 
-
 /* Making the sidebar responsive */
 
 @media (max-width: 900px) {
@@ -242,7 +235,6 @@ html{
 
 
 
-
 /* Smartphone version */
 
 @media (max-width: 450px) {
@@ -291,12 +283,11 @@ html{
 
 
 
-
 /*  Removing margins and paddings from the body, so that
     the sidebar takes the full height of the page */
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #e0e0e0
+    background-color: #e0e0e0;
 }

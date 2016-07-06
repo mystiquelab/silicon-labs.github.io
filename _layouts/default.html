@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>Silicon-Labs</title>
+
+	<!-- default styles -->
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<!-- logo text font -->
+	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+	
+
+{{content}}
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script>
+		$(function () {
+			var links = $('.sidebar-links > div');
+			links.on('click', function () {
+
+				links.removeClass('selected');
+				$(this).addClass('selected');
+			});
+		});
+	</script>
+</body>
+</html> 
